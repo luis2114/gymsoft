@@ -68,26 +68,15 @@ public class inicio {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		Box horizontalBox = Box.createHorizontalBox();
-		horizontalBox.setBounds(10, 62, 102, -63);
-		frame.getContentPane().add(horizontalBox);
-		
-		Box horizontalBox_1 = Box.createHorizontalBox();
-		horizontalBox_1.setBounds(10, 0, 497, 64);
-		frame.getContentPane().add(horizontalBox_1);
-		
-		Box horizontalBox_2 = Box.createHorizontalBox();
-		horizontalBox_2.setBounds(25, 75, 371, -14);
-		frame.getContentPane().add(horizontalBox_2);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(10, 75, 72, -5);
-		frame.getContentPane().add(lblNewLabel);
-		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon("imagenes"+File.separator+"SLOGAN.gif"));
-		lblNewLabel_1.setBounds(168, 125, 223, 127);
+		lblNewLabel_1.setBounds(166, 206, 223, 127);
 		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel label = new JLabel("");
+		label.setIcon(new ImageIcon("imagenes"+File.separator+"Captura.jpg"));
+		label.setBounds(156, 58, 223, 73);
+		frame.getContentPane().add(label);
 		
 		JMenuBar menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
@@ -107,7 +96,7 @@ public class inicio {
 				
 				informacion miInformacion = new informacion();
 				miInformacion.setVisible  (true);
-				
+				miInformacion.setDefaultCloseOperation(1);
 				
 			}
 		});
@@ -120,24 +109,39 @@ public class inicio {
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("agregar administrador");
 		mntmNewMenuItem_1.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
-				
-				{
-					System.out.println("hola");
-					//JOptionPane.showMessageDialog(null,"hola");
-					
-					
-					agradmi miAgradmi = new agradmi();
-					miAgradmi.setVisible  (true);
-					
-					
-				}
-			}
-		});
+			public void mousePressed(MouseEvent arg0) {
+						
+						agradmi miAgradmi = new agradmi();
+						miAgradmi.setVisible  (true);
+						miAgradmi.setDefaultCloseOperation(1);	
+			}	
+		}
+			
+		);
 		mnAdministrador.add(mntmNewMenuItem_1);
 		
 		JMenuItem mntmBuscarAdministrador = new JMenuItem("buscar administrador");
+		mntmBuscarAdministrador.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				busadmi miBusadmi = new busadmi();
+				miBusadmi.setVisible  (true);
+				miBusadmi.setDefaultCloseOperation(1);	
+			}
+		});
 		mnAdministrador.add(mntmBuscarAdministrador);
+		
+		JMenuItem mntmNewMenuItem_3 = new JMenuItem("eliminar administrador");
+		mntmNewMenuItem_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				elimadm miElimadm = new elimadm();
+				miElimadm.setVisible  (true);
+				miElimadm.setDefaultCloseOperation(1);
+			}
+		});
+		mnAdministrador.add(mntmNewMenuItem_3);
 		
 		JMenu mnNewMenu = new JMenu("Control");
 		menuBar.add(mnNewMenu);
@@ -145,10 +149,39 @@ public class inicio {
 		mnNewMenu.setForeground(new Color(0, 0, 0));
 		
 		JMenuItem mntmAgregarControl = new JMenuItem("agregar control");
+		mntmAgregarControl.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				agradcontl miAgradcontl = new agradcontl();
+				miAgradcontl.setVisible  (true);
+				miAgradcontl.setDefaultCloseOperation(1);
+			}
+		});
 		mnNewMenu.add(mntmAgregarControl);
 		
 		JMenuItem mntmBuscarControl = new JMenuItem("buscar control");
+		mntmBuscarControl.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				buscontl miBuscontl = new buscontl();
+				miBuscontl.setVisible  (true);
+				miBuscontl.setDefaultCloseOperation(1);
+			}
+		});
 		mnNewMenu.add(mntmBuscarControl);
+		
+		JMenuItem mntmEliminarControl = new JMenuItem("eliminar control");
+		mntmEliminarControl.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				elimcontl miElimcontl = new elimcontl();
+				miElimcontl.setVisible  (true);
+				miElimcontl.setDefaultCloseOperation(1);
+			}
+		});
+		mnNewMenu.add(mntmEliminarControl);
 		
 		JMenu mnContrato = new JMenu("contrato");
 		menuBar.add(mnContrato);
@@ -160,6 +193,9 @@ public class inicio {
 		JMenuItem mntmBuscarContrato = new JMenuItem("buscar contrato");
 		mnContrato.add(mntmBuscarContrato);
 		
+		JMenuItem mntmEliminarContrato = new JMenuItem("eliminar contrato");
+		mnContrato.add(mntmEliminarContrato);
+		
 		JMenu mnInstructores = new JMenu("instructores");
 		mnInstructores.setFont(new Font("Segoe Print", Font.PLAIN, 12));
 		menuBar.add(mnInstructores);
@@ -169,6 +205,9 @@ public class inicio {
 		
 		JMenuItem mntmBuscarInstructor = new JMenuItem("buscar instructor");
 		mnInstructores.add(mntmBuscarInstructor);
+		
+		JMenuItem mntmEliminarRegistroDe = new JMenuItem("eliminar registro de instructor");
+		mnInstructores.add(mntmEliminarRegistroDe);
 		
 		JMenu mnReporte = new JMenu("Cliente");
 		menuBar.add(mnReporte);
@@ -180,6 +219,9 @@ public class inicio {
 		JMenuItem mntmBuscarCliente = new JMenuItem("buscar cliente");
 		mnReporte.add(mntmBuscarCliente);
 		
+		JMenuItem mntmEliminarRegistroDe_1 = new JMenuItem("eliminar registro de cliente");
+		mnReporte.add(mntmEliminarRegistroDe_1);
+		
 		JMenu mnRutina = new JMenu("reporte");
 		menuBar.add(mnRutina);
 		mnRutina.setFont(new Font("Segoe Print", Font.PLAIN, 12));
@@ -190,6 +232,9 @@ public class inicio {
 		JMenuItem mntmBuscarReporte = new JMenuItem("buscar reporte");
 		mnRutina.add(mntmBuscarReporte);
 		
+		JMenuItem mntmEliminarReporte = new JMenuItem("eliminar reporte");
+		mnRutina.add(mntmEliminarReporte);
+		
 		JMenu mnRutina_1 = new JMenu("rutina");
 		mnRutina_1.setFont(new Font("Segoe Print", Font.PLAIN, 12));
 		menuBar.add(mnRutina_1);
@@ -199,6 +244,9 @@ public class inicio {
 		
 		JMenuItem mntmBuscarRutina = new JMenuItem("buscar rutina");
 		mnRutina_1.add(mntmBuscarRutina);
+		
+		JMenuItem mntmEliminarRutina = new JMenuItem("eliminar rutina");
+		mnRutina_1.add(mntmEliminarRutina);
 		
 		JMenuBar menuBar_1 = new JMenuBar();
 		menuBar.add(menuBar_1);

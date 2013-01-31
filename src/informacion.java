@@ -23,6 +23,7 @@ public class informacion extends JFrame {
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
+	private JButton btnRegistrar;
 
 	/**
 	 * Launch the application.
@@ -61,11 +62,13 @@ public class informacion extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				{
+					
+					
 					inicio miInicio = new inicio();
 					miInicio.setVisible(true);
+					dispose();
 					
 					
-					System.out.println("hola");
 					
 				}
 			}
@@ -104,5 +107,9 @@ public class informacion extends JFrame {
 		textField_3.setColumns(10);
 		textField_3.setBounds(106, 212, 86, 20);
 		contentPane.add(textField_3);
+		
+		btnRegistrar = new JButton("registrar");
+		btnRegistrar.setBounds(152, 275, 89, 23);
+		contentPane.add(btnRegistrar);
 	}
 }

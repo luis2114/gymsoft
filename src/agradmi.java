@@ -8,6 +8,8 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class agradmi extends JFrame {
@@ -18,6 +20,7 @@ public class agradmi extends JFrame {
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
+	private JButton btnAgregar;
 
 	/**
 	 * Launch the application.
@@ -48,7 +51,7 @@ public class agradmi extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblIdAdministrador = new JLabel("id administrador");
-		lblIdAdministrador.setBounds(21, 65, 56, 21);
+		lblIdAdministrador.setBounds(21, 65, 78, 21);
 		contentPane.add(lblIdAdministrador);
 		
 		JLabel label_1 = new JLabel("nombre");
@@ -93,7 +96,21 @@ public class agradmi extends JFrame {
 		contentPane.add(textField_4);
 		
 		JButton button = new JButton("inicio");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				inicio miInicio = new inicio();
+				miInicio.setVisible(true);
+				dispose();
+				
+				
+			}
+		});
 		button.setBounds(10, 11, 89, 23);
 		contentPane.add(button);
+		
+		btnAgregar = new JButton("agregar");
+		btnAgregar.setBounds(208, 232, 89, 23);
+		contentPane.add(btnAgregar);
 	}
 }
