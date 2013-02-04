@@ -8,6 +8,8 @@ import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class elimcontra extends JFrame {
@@ -44,6 +46,14 @@ public class elimcontra extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton button = new JButton("inicio");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				inicio miInicio = new inicio();
+				miInicio.setVisible(true);
+				hide();
+			}
+		});
 		button.setBounds(10, 11, 89, 23);
 		contentPane.add(button);
 		
@@ -51,7 +61,7 @@ public class elimcontra extends JFrame {
 		button_1.setBounds(227, 96, 89, 23);
 		contentPane.add(button_1);
 		
-		JLabel lblIdContrato = new JLabel("id contrato");
+		JLabel lblIdContrato = new JLabel("Id contrato");
 		lblIdContrato.setBounds(29, 97, 89, 21);
 		contentPane.add(lblIdContrato);
 		

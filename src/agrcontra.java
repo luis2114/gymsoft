@@ -8,6 +8,8 @@ import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class agrcontra extends JFrame {
@@ -47,22 +49,31 @@ public class agrcontra extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton button = new JButton("inicio");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+				inicio miInicio = new inicio();
+				miInicio.setVisible(true);
+				hide();
+			
+			}
+		});
 		button.setBounds(10, 11, 89, 23);
 		contentPane.add(button);
 		
-		JLabel lblIdContrato = new JLabel("id contrato");
+		JLabel lblIdContrato = new JLabel("Id contrato");
 		lblIdContrato.setBounds(10, 65, 56, 21);
 		contentPane.add(lblIdContrato);
 		
-		JLabel lblIdMensual = new JLabel("mensual");
+		JLabel lblIdMensual = new JLabel("Mensual");
 		lblIdMensual.setBounds(10, 97, 56, 21);
 		contentPane.add(lblIdMensual);
 		
-		JLabel lblSemanal = new JLabel("semanal");
+		JLabel lblSemanal = new JLabel("Semanal");
 		lblSemanal.setBounds(10, 129, 56, 21);
 		contentPane.add(lblSemanal);
 		
-		JLabel lblDiario = new JLabel("diario");
+		JLabel lblDiario = new JLabel("Diario");
 		lblDiario.setBounds(10, 161, 56, 21);
 		contentPane.add(lblDiario);
 		

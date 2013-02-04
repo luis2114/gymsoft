@@ -45,13 +45,13 @@ public class elimadm extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel label = new JLabel("id administrador");
-		label.setBounds(10, 93, 89, 21);
-		contentPane.add(label);
+		JLabel lblIdAdministrador = new JLabel("Id administrador");
+		lblIdAdministrador.setBounds(10, 93, 103, 21);
+		contentPane.add(lblIdAdministrador);
 		
 		textField = new JTextField();
 		textField.setColumns(10);
-		textField.setBounds(119, 93, 86, 20);
+		textField.setBounds(142, 93, 86, 20);
 		contentPane.add(textField);
 		
 		JButton button = new JButton("inicio");
@@ -69,7 +69,7 @@ public class elimadm extends JFrame {
 		contentPane.add(button);
 		
 		JButton btnEliminar = new JButton("eliminar");
-		btnEliminar.setBounds(241, 93, 89, 23);
+		btnEliminar.setBounds(262, 92, 89, 23);
 		contentPane.add(btnEliminar);
 	}
 

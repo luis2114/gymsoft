@@ -63,7 +63,7 @@ public class elimcontl extends JFrame {
 		button_1.setBounds(232, 85, 89, 23);
 		contentPane.add(button_1);
 		
-		JLabel lblIdControl = new JLabel("id control");
+		JLabel lblIdControl = new JLabel("Id control");
 		lblIdControl.setBounds(22, 86, 89, 21);
 		contentPane.add(lblIdControl);
 		

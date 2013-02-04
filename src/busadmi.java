@@ -59,17 +59,17 @@ public class busadmi extends JFrame {
 		button.setBounds(10, 11, 89, 23);
 		contentPane.add(button);
 		
-		JLabel label = new JLabel("id administrador");
-		label.setBounds(10, 103, 89, 21);
-		contentPane.add(label);
+		JLabel lblIdAdministrador = new JLabel("Id administrador");
+		lblIdAdministrador.setBounds(10, 103, 105, 21);
+		contentPane.add(lblIdAdministrador);
 		
 		textField = new JTextField();
 		textField.setColumns(10);
-		textField.setBounds(109, 103, 86, 20);
+		textField.setBounds(143, 103, 86, 20);
 		contentPane.add(textField);
 		
 		JButton btnBuscar = new JButton("buscar");
-		btnBuscar.setBounds(225, 102, 89, 23);
+		btnBuscar.setBounds(270, 102, 89, 23);
 		contentPane.add(btnBuscar);
 	}
 }

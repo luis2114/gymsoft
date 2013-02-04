@@ -54,7 +54,7 @@ public class informacion extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("nombre");
+		JLabel lblNewLabel = new JLabel("Nombre");
 		lblNewLabel.setBounds(28, 92, 56, 21);
 		contentPane.add(lblNewLabel);
 		
@@ -76,15 +76,15 @@ public class informacion extends JFrame {
 		btnNewButton.setBounds(10, 11, 89, 23);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblDireccion = new JLabel("direccion");
+		JLabel lblDireccion = new JLabel("Direccion");
 		lblDireccion.setBounds(28, 132, 56, 21);
 		contentPane.add(lblDireccion);
 		
-		JLabel lblTelefono = new JLabel("telefono");
+		JLabel lblTelefono = new JLabel("Telefono");
 		lblTelefono.setBounds(28, 172, 56, 21);
 		contentPane.add(lblTelefono);
 		
-		JLabel lblCorreo = new JLabel("correo");
+		JLabel lblCorreo = new JLabel("Correo");
 		lblCorreo.setBounds(28, 212, 56, 21);
 		contentPane.add(lblCorreo);
 		

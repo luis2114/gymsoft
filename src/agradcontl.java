@@ -66,19 +66,19 @@ public class agradcontl extends JFrame {
 		button_1.setBounds(239, 204, 89, 23);
 		contentPane.add(button_1);
 		
-		JLabel lblIdControl = new JLabel("id control");
+		JLabel lblIdControl = new JLabel("Id control");
 		lblIdControl.setBounds(22, 65, 56, 21);
 		contentPane.add(lblIdControl);
 		
-		JLabel lblAsistencia = new JLabel("fecha de inicio");
+		JLabel lblAsistencia = new JLabel("Fecha de inicio");
 		lblAsistencia.setBounds(22, 97, 77, 21);
 		contentPane.add(lblAsistencia);
 		
-		JLabel lblEstadoDeContrato = new JLabel("estado de contrato");
+		JLabel lblEstadoDeContrato = new JLabel("Estado de contrato");
 		lblEstadoDeContrato.setBounds(22, 129, 102, 21);
 		contentPane.add(lblEstadoDeContrato);
 		
-		JLabel lblTipoDeContrato = new JLabel("tipo de contrato");
+		JLabel lblTipoDeContrato = new JLabel("Tipo de contrato");
 		lblTipoDeContrato.setBounds(22, 161, 89, 21);
 		contentPane.add(lblTipoDeContrato);
 		

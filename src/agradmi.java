@@ -50,49 +50,49 @@ public class agradmi extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblIdAdministrador = new JLabel("id administrador");
-		lblIdAdministrador.setBounds(21, 65, 78, 21);
+		JLabel lblIdAdministrador = new JLabel("Id administrador");
+		lblIdAdministrador.setBounds(21, 65, 94, 21);
 		contentPane.add(lblIdAdministrador);
 		
-		JLabel label_1 = new JLabel("nombre");
-		label_1.setBounds(21, 97, 56, 21);
-		contentPane.add(label_1);
+		JLabel lblNombre = new JLabel("Nombre");
+		lblNombre.setBounds(21, 97, 56, 21);
+		contentPane.add(lblNombre);
 		
-		JLabel lblTelefono = new JLabel("telefono");
+		JLabel lblTelefono = new JLabel("Telefono");
 		lblTelefono.setBounds(21, 129, 56, 21);
 		contentPane.add(lblTelefono);
 		
-		JLabel lblDireccion = new JLabel("direccion");
+		JLabel lblDireccion = new JLabel("Direccion");
 		lblDireccion.setBounds(21, 161, 56, 21);
 		contentPane.add(lblDireccion);
 		
-		JLabel lblCorreo = new JLabel("correo");
+		JLabel lblCorreo = new JLabel("Correo");
 		lblCorreo.setBounds(21, 193, 56, 21);
 		contentPane.add(lblCorreo);
 		
 		textField = new JTextField();
-		textField.setBounds(122, 65, 86, 20);
+		textField.setBounds(151, 65, 86, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(122, 97, 86, 20);
+		textField_1.setBounds(151, 97, 86, 20);
 		contentPane.add(textField_1);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(122, 129, 86, 20);
+		textField_2.setBounds(151, 129, 86, 20);
 		contentPane.add(textField_2);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(122, 161, 86, 20);
+		textField_3.setBounds(151, 161, 86, 20);
 		contentPane.add(textField_3);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(122, 193, 86, 20);
+		textField_4.setBounds(151, 193, 86, 20);
 		contentPane.add(textField_4);
 		
 		JButton button = new JButton("inicio");

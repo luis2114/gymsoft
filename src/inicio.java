@@ -230,12 +230,39 @@ public class inicio {
 		menuBar.add(mnInstructores);
 		
 		JMenuItem mntmRegistrarNuevoInstructor = new JMenuItem("registrar nuevo instructor");
+		mntmRegistrarNuevoInstructor.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				
+				agrins miAgrins = new agrins();
+				miAgrins.setVisible  (true);
+				miAgrins.setDefaultCloseOperation(1);
+			}
+		});
 		mnInstructores.add(mntmRegistrarNuevoInstructor);
 		
 		JMenuItem mntmBuscarInstructor = new JMenuItem("buscar instructor");
+		mntmBuscarInstructor.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				busins miBusins = new busins();
+				miBusins.setVisible  (true);
+				miBusins.setDefaultCloseOperation(1);
+			}
+		});
 		mnInstructores.add(mntmBuscarInstructor);
 		
 		JMenuItem mntmEliminarRegistroDe = new JMenuItem("eliminar registro de instructor");
+		mntmEliminarRegistroDe.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				busins miBusins = new busins();
+				miBusins.setVisible  (true);
+				miBusins.setDefaultCloseOperation(1);
+			}
+		});
 		mnInstructores.add(mntmEliminarRegistroDe);
 		
 		JMenu mnReporte = new JMenu("Cliente");
@@ -243,12 +270,40 @@ public class inicio {
 		mnReporte.setFont(new Font("Segoe Print", Font.PLAIN, 12));
 		
 		JMenuItem mntmRegistrarNuevoCliente = new JMenuItem("registrar nuevo cliente");
+		mntmRegistrarNuevoCliente.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				
+				agrclin miAgrclin = new agrclin();
+				miAgrclin.setVisible  (true);
+				miAgrclin.setDefaultCloseOperation(1);
+			}
+		});
 		mnReporte.add(mntmRegistrarNuevoCliente);
 		
 		JMenuItem mntmBuscarCliente = new JMenuItem("buscar cliente");
+		mntmBuscarCliente.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				busclin miBusclin = new busclin();
+				miBusclin.setVisible  (true);
+				miBusclin.setDefaultCloseOperation(1);
+			}
+		});
 		mnReporte.add(mntmBuscarCliente);
 		
 		JMenuItem mntmEliminarRegistroDe_1 = new JMenuItem("eliminar registro de cliente");
+		mntmEliminarRegistroDe_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				elimclin miElimclin = new elimclin();
+				miElimclin.setVisible  (true);
+				miElimclin.setDefaultCloseOperation(1);
+			}
+		});
 		mnReporte.add(mntmEliminarRegistroDe_1);
 		
 		JMenu mnRutina = new JMenu("reporte");
@@ -256,12 +311,39 @@ public class inicio {
 		mnRutina.setFont(new Font("Segoe Print", Font.PLAIN, 12));
 		
 		JMenuItem mntmRegistrarNuevoReporte = new JMenuItem("registrar nuevo reporte");
+		mntmRegistrarNuevoReporte.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				agrrep miAgrrep = new agrrep();
+				miAgrrep.setVisible  (true);
+				miAgrrep.setDefaultCloseOperation(1);
+			}
+		});
 		mnRutina.add(mntmRegistrarNuevoReporte);
 		
 		JMenuItem mntmBuscarReporte = new JMenuItem("buscar reporte");
+		mntmBuscarReporte.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				busrep miBusrep = new busrep();
+				miBusrep.setVisible  (true);
+				miBusrep.setDefaultCloseOperation(1);
+			}
+		});
 		mnRutina.add(mntmBuscarReporte);
 		
 		JMenuItem mntmEliminarReporte = new JMenuItem("eliminar reporte");
+		mntmEliminarReporte.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				
+				elimrep miElimrep = new elimrep();
+				miElimrep.setVisible  (true);
+				miElimrep.setDefaultCloseOperation(1);
+			}
+		});
 		mnRutina.add(mntmEliminarReporte);
 		
 		JMenu mnRutina_1 = new JMenu("rutina");
