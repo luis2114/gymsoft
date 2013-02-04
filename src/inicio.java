@@ -188,12 +188,41 @@ public class inicio {
 		mnContrato.setFont(new Font("Segoe Print", Font.PLAIN, 12));
 		
 		JMenuItem mntmNewMenuItem_2 = new JMenuItem("agregar contrato");
+		mntmNewMenuItem_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				
+				agrcontra miAgrcontra = new agrcontra();
+				miAgrcontra.setVisible  (true);
+				miAgrcontra.setDefaultCloseOperation(1);
+				
+				
+			}
+		});
 		mnContrato.add(mntmNewMenuItem_2);
 		
 		JMenuItem mntmBuscarContrato = new JMenuItem("buscar contrato");
+		mntmBuscarContrato.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				
+				buscontra miBuscontra = new buscontra();
+				miBuscontra.setVisible  (true);
+				miBuscontra.setDefaultCloseOperation(1);
+			}
+		});
 		mnContrato.add(mntmBuscarContrato);
 		
 		JMenuItem mntmEliminarContrato = new JMenuItem("eliminar contrato");
+		mntmEliminarContrato.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				
+				elimcontra miElimcontra = new elimcontra();
+				miElimcontra.setVisible  (true);
+				miElimcontra.setDefaultCloseOperation(1);
+			}
+		});
 		mnContrato.add(mntmEliminarContrato);
 		
 		JMenu mnInstructores = new JMenu("instructores");
